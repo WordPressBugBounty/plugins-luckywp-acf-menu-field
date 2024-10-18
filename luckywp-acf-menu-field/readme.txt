@@ -3,7 +3,7 @@ Contributors: theluckywp
 Donate link: https://theluckywp.com/
 Tags: advanced custom fields, acf, menu, menus, nav menu
 Requires at least: 4.7
-Tested up to: 5.5
+Tested up to: 6.6.2
 Stable tag: 1.0
 Requires PHP: 5.6.20
 License: GPLv2 or later
@@ -26,6 +26,8 @@ LuckyWP ACF Menu Field is compatible with:
 
 * Advanced Custom Fields 5
 * Advanced Custom Fields PRO 5
+* Advanced Custom Fields 6
+* Advanced Custom Fields PRO 6
 
 == Installation ==
 
