@@ -4,7 +4,7 @@ Donate link: https://theluckywp.com/
 Tags: advanced custom fields, acf, menu, menus, nav menu
 Requires at least: 4.7
 Tested up to: 6.6.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 Requires PHP: 5.6.20
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -61,6 +61,9 @@ Into ACF field type will appear option "Menu" (group "Relational").
 2. Menu Field
 
 == Changelog ==
+
+= 1.0.1 — 2024-11-11 =
+* Fix "LuckyWP Plugins" page.
 
 = 1.0 — 2020-05-26 =
 + Initial release.
