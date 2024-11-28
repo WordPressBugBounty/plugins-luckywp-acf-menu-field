@@ -12,13 +12,13 @@ class Plugins extends BaseObject
     {
         // Ссылки в списке плагинов
         add_filter('plugin_action_links_' . Core::$plugin->basename, function ($links) {
-            $links[] = '<a href="plugins.php?page=lwpamf_plugins">' . esc_html__('LuckyWP Plugins', 'luckywp-acf-menu-field') . '</a>';
+            $links[] = '<a href="admin.php?page=lwpamf_plugins">' . esc_html__('LuckyWP Plugins', 'luckywp-acf-menu-field') . '</a>';
             return $links;
         });
 
         add_action('admin_menu', function () {
             add_submenu_page(
-                null,
+                Core::$plugin->prefix . '-hidden',
                 esc_html__('LuckyWP Plugins', 'luckywp-acf-menu-field'),
                 esc_html__('LuckyWP Plugins', 'luckywp-acf-menu-field'),
                 'read',
