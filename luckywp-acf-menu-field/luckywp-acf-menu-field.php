@@ -2,7 +2,7 @@
 /*
 Plugin Name: LuckyWP ACF Menu Field
 Description: Add navigation menu field type to Advanced Custom Fields
-Version: 1.0.2
+Version: 1.0.3
 Author: LuckyWP
 Author URI: https://theluckywp.com/
 Text Domain: luckywp-acf-menu-field
@@ -28,4 +28,4 @@ $lwpamfAutoloader->register();
 $lwpamfAutoloader->addNamespace('luckywp\acfMenuField', __DIR__);
 
 $config = require(__DIR__ . '/config/plugin.php');
-(new \luckywp\acfMenuField\plugin\Plugin($config))->run('1.0.2', __FILE__, 'lwpamf_');
+(new \luckywp\acfMenuField\plugin\Plugin($config))->run('1.0.3', __FILE__, 'lwpamf_');

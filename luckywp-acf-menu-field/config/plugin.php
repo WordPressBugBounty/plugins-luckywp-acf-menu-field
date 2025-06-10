@@ -5,7 +5,7 @@ return [
         'admin',
         'pluginRate',
     ],
-    'pluginsLoadedBootstrap' => [
+    'bootstrapAfterSetupTheme' => [
     ],
     'components' => [
         'admin' => \luckywp\acfMenuField\admin\Admin::class,

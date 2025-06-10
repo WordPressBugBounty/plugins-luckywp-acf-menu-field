@@ -58,16 +58,16 @@ abstract class BasePlugin extends ServiceLocator
     /**
      * @var array
      */
-    public $pluginsLoadedBootstrap = [];
+    public $bootstrapAfterSetupTheme = [];
 
     public function __construct(array $config = [])
     {
         Core::initialize($this);
-        add_action('plugins_loaded', function () {
+        add_action('after_setup_theme', function () {
             if ($this->textDomain) {
                 load_plugin_textdomain($this->textDomain, false, basename($this->dir) . '/' . $this->domainPath);
             }
-            $this->bootstrap($this->pluginsLoadedBootstrap);
+            $this->bootstrap($this->bootstrapAfterSetupTheme);
         });
         parent::__construct($config);
     }
